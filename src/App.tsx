@@ -1,4 +1,6 @@
+import SplitBreakdown from "./components/deal/SplitBreakdown";
 import ConfirmationSidebar from "./components/sidebar/ConfirmationSidebar";
+import LifecycleTimeline from "./components/deal/LifecycleTimeline";
 import { dealData } from "./data/deal";
 import logo from "/logo.svg";
 
@@ -18,8 +20,13 @@ export default function App() {
           </p>
         </div>
       </nav>
-      <section className="grid grid-cols-4 gap-5 p-6">
-        <div className="col-span-3"></div>
+      <section className="grid grid-cols-4 bg-[#f5f4f1]">
+        <div className="col-span-3">
+          <div className="flex items-start">
+            <SplitBreakdown/>
+            <LifecycleTimeline />
+          </div>
+        </div>
         <div className="col-span-1">
           <ConfirmationSidebar />
         </div>
