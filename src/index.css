@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.playfair {
+    font-family: "Playfair Display", serif;
+}
+
+.instrument {
+    font-family: "Instrument Sans", sans-serif;
+}
